@@ -10,6 +10,9 @@ function randomChar() {
 }
 
 $(document).ready(() => {
+  if(location.hostname == "dunejp.github.io") {
+    alert("For better and fixed layout, please download this repository and run it locally.");
+  }
   const amount = prompt("Amount") + ".00";
   $("#text-amount").text(amount);
   $("#amount").html(`<span id="amount-currency">P</span>${amount}`);
