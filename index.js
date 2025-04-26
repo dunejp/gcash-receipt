@@ -10,7 +10,7 @@ function randomChar() {
 }
 
 $(document).ready(() => {
-  if(location.hostname == "dunejp.github.io") {
+  if(location.origin.includes("dunejp.github.io")) {
     alert("For better and fixed layout, please download this repository and run it locally.");
   }
   const amount = prompt("Amount") + ".00";
